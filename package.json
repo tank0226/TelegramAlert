@@ -8,8 +8,12 @@
   },
   "scripts": {
     "build": "webpack",
-    "lint": "eslint -c .eslintrc src/**/*",
+    "lint": "eslint src",
+    "lint:path": "eslint",
     "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "graylog"
   },
   "keywords": [
     "graylog"
@@ -18,13 +22,10 @@
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.21",
-    "react-select": "^4.3.0",
+    "react-select": "5.8.0",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "graylog-web-plugin": "file:../graylog2-server/graylog2-web-interface/packages/graylog-web-plugin"
-  },
-  "resolutions": {
-    "**/**/create-react-class": "^15.7.0"
   }
 }
